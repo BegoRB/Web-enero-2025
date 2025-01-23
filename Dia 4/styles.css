@@ -3,15 +3,16 @@
     padding: 0;
     border: 0;
     box-sizing: border-box;
+    font-family: "Roboto", serif;
 }
 
 
 .titulo {
-    font-family: "Roboto", serif;
+    font-family: "Montserrat", serif;
     margin: 20px 20px;
 }
 
-.texto {
+p{
     font-family: "Roboto", serif;
     font-weight: 300;
     margin: 30px 20px;
@@ -28,19 +29,30 @@
 
 }
 
-.boton{
-    background-color: chartreuse;
-    display: inline-block;
-    width: 90px;
+button{
+    background-color: rgb(146, 219, 222);
+    display: flex;
+    align-items: center;
+    color: rgb(4, 50, 52);
+    padding: 10px 20px;
+    border-color: rgb(146, 219, 222);
+    border-style: none;
+    border-radius: 20px;
+    font-size: 14px;
 }
 
+.boton {
+    display: flex;
+    justify-content: center;   
+    margin: 20px; 
+}
 
 .barra-superior {
-    display: flex;
+    display:flex;
     height: 120px;
     justify-content: center;
     align-items: center;
-    background-color: rgb(87, 190, 36);
+    background-color: rgb(197, 217, 229);
 }
 
 .img {
@@ -67,12 +79,30 @@
     display: inline-block;
     height: 100vh 200px;
     margin: 20px 20px;
-    background-color: aqua;
+    background-color: rgb(220, 244, 244);
+    border-radius: 10px;
 }
 
 
-.bloque-contenido .img{
-    width: 50%;
+.flores{
+    height: 50vh;
+    margin: 20px;
+    display: flex;
 }
 
+
+footer {
+    background-color: rgb(50, 46, 82);
+    padding: 40px 20px;
+}
+
+.datos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.datos .enlace{
+    color: aliceblue;
+    text-decoration: none;
+}
 
