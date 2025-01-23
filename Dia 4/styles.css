@@ -1,0 +1,78 @@
+*:not(button){
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+
+.titulo {
+    font-family: "Roboto", serif;
+    margin: 20px 20px;
+}
+
+.texto {
+    font-family: "Roboto", serif;
+    font-weight: 300;
+    margin: 30px 20px;
+}
+
+.imagen{
+    display: inline-block;
+    background-color: blueviolet;
+    margin: 20px;
+}
+
+.paisaje{
+    width:100%;
+
+}
+
+.boton{
+    background-color: chartreuse;
+    display: inline-block;
+    width: 90px;
+}
+
+
+.barra-superior {
+    display: flex;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(87, 190, 36);
+}
+
+.img {
+    width: 20px;
+    margin: 5px;
+}
+
+.enlaces {
+    text-decoration: none;
+    color: black;
+    margin: 5px;
+
+}
+
+.contenedor {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+
+}
+
+
+.bloque-contenido {
+    display: inline-block;
+    height: 100vh 200px;
+    margin: 20px 20px;
+    background-color: aqua;
+}
+
+
+.bloque-contenido .img{
+    width: 50%;
+}
+
+
