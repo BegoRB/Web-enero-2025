@@ -18,30 +18,38 @@
     <title>Dia 5</title>
 </head>
 
-<body id="index">
+<body>
 
     <header>
-        <div class="logo">
-            <img src="/img/logo.png">
+        <div class="header__logo">
+            <img src="/img/logo.png" class="header__logo-img">
         </div>
 
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">Inicio</a></li>
-                <li><a href="news.html">Noticias</a></li>
-                <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item">
+                    <a href="index.html" class="header__nav-link header__nav-link--active">Inicio</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="news.html" class="header__nav-link">Noticias</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="galeria.html" class="header__nav-link">Galeria</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="contacto.html" class="header__nav-link">Contacto</a>
+                </li>
             </ul>
         </nav>
     </header>
 
-    <video autoplay loop muted playsinline id="bg-video">
+    <video autoplay loop muted playsinline id="bg-video" class="video-background">
         <source src="/img/220944_small.mp4" type="video/mp4">
     </video>  
-    <main class="index">
+    <main class="main main--index">
  
-        <div class="texto">
-            <h1>Cumbres del mundo</h1>
+        <div class="main__texto">
+            <h1 class="main__title">Cumbres del mundo</h1>
             <button type="button" class="unete-btn">Únete</button> 
         </div>     
 
@@ -52,10 +60,10 @@
                 <p>
                     Las montañas más imponentes de la Tierra son testigos de la historia y refugio de ecosistemas únicos. Su grandeza inspira, pero también enfrenta amenazas que requieren nuestra atención. Descubre su importancia, los peligros que las acechan y cómo podemos protegerlas juntos.
                 </p>
-                <div class="fotos">
-                    <img src="/img/galeria-1.webp">
-                    <img src="/img/galeria-2.jpg">
-                    <img src="/img/galeria-3.webp">
+                <div class="main__fotos">
+                    <img  class="main__foto" src="/img/galeria-1.webp">
+                    <img  class="main__foto" src="/img/galeria-2.jpg">
+                    <img  class="main__foto" src="/img/galeria-3.webp">
                 </div>
             </div>    
 
@@ -70,10 +78,18 @@
         </div>
     
         <ul class="footer-enlaces">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="news.html">Noticias</a></li>
-            <li><a href="galeria.html">Galeria</a></li>
-            <li><a href="contacto.html" class="active">Contacto</a></li>
+            <li class="footer__enlace-item">
+                <a class="footer__enlace-link" href="index.html">Inicio</a>
+            </li>
+            <li class="footer__enlace-item">
+                <a class="footer__enlace-link" href="news.html">Noticias</a>
+            </li>
+            <li class="footer__enlace-item">
+                <a class="footer__enlace-link" href="galeria.html">Galeria</a>
+            </li>
+            <li class="footer__enlace-item">
+                <a class="footer__enlace-link" href="contacto.html">Contacto</a>
+            </li>
         </ul>
     </footer>
 

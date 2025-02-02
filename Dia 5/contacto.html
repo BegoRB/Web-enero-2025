@@ -18,40 +18,48 @@
 <body id="galeria">
 
     <header>
-        <div class="logo">
-            <img src="/img/logo.png">
+        <div class="header__logo">
+            <img src="/img/logo.png" class="header__logo-img">
         </div>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="news.html">Noticias</a></li>
-                <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="contacto.html" class="active">Contacto</a></li>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item">
+                    <a href="index.html" class="header__nav-link header__nav-link--active">Inicio</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="news.html" class="header__nav-link">Noticias</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="galeria.html" class="header__nav-link">Galeria</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="contacto.html" class="header__nav-link">Contacto</a>
+                </li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main class="main main--contacto">
  
-        <h1>Contacto</h1>
+        <h1 class="main__title">Contacto</h1>
 
-       <form action="" class="contacto">
-            <ul>
-                <li>
-                    <label for="nombre">Nombre</label>
-                    <input type="text">
+       <form action="" class="form--contacto">
+            <ul class="form__list">
+                <li class="form__item">
+                    <label for="nombre" class="form__label">Nombre</label>
+                    <input type="text" id="nombre" class="form__input">
                 </li>
-                <li>
-                    <label for="correo">Correo electrónico:</label>
-                    <input type="text">
+                <li class="form__item">
+                    <label for="correo" class="form__label">Correo electrónico:</label>
+                    <input type="text" id="correo" class="form__input">
                 </li>
-                <li>
-                    <label for="mensaje">Mensaje:</label>
-                    <input type="text">
+                <li class="form__item">
+                    <label for="mensaje" class="form__label">Mensaje:</label>
+                    <input type="text" id="mensaje" class="form__input">
                 </li>
             </ul>
-            <button type="button" class="enviar-btn">Enviar</button> 
+            <button type="button" class="form__button--enviar">Enviar</button> 
        </form>
 
     </main>
@@ -62,12 +70,21 @@
         </div>
     
         <ul class="footer-enlaces">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="news.html">Noticias</a></li>
-            <li><a href="galeria.html">Galeria</a></li>
-            <li><a href="contacto.html" class="active">Contacto</a></li>
+            <li class="footer__enlace-item">
+                <a class="footer__enlace-link" href="index.html">Inicio</a>
+            </li>
+            <li class="footer__enlace-item">
+                <a class="footer__enlace-link" href="news.html">Noticias</a>
+            </li>
+            <li class="footer__enlace-item">
+                <a class="footer__enlace-link" href="galeria.html">Galeria</a>
+            </li>
+            <li class="footer__enlace-item">
+                <a class="footer__enlace-link" href="contacto.html">Contacto</a>
+            </li>
         </ul>
     </footer>
+
 
 </body>
 

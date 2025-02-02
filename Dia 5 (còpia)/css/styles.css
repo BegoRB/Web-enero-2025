@@ -22,18 +22,17 @@ header{
     width: 100%;
 }
 
-.logo {
+.header__logo {
     height: 100%;
     display: flex;
     align-items: center;
-    height: 30px;
 }
 
-.logo img {
-    height: 100%;
+.header__logo img {
+    height: 40px;
 }
 
-nav {
+.header__nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -82,8 +81,28 @@ body {
     background-attachment: fixed;
 }
 
+.main--index{
+    display: inline;
+    
+}    
 
-main {
+#bg-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(60%); 
+}
+
+
+
+.main--index {
     padding: 90px;
     width: 100%;
     min-height: calc(100vh - 120px);
@@ -92,23 +111,90 @@ main {
     gap: 40px;
 }
 
-.texto{
+.main__texto{
+    display: flex;
+    flex-direction: column;
     width: 90%;
     color: aliceblue;
-    gap: 20px;
+    gap: 50px;
+    margin-bottom: 200px;
+
+}
+
+.unete-btn{
+    display: inline-block;
+    padding: 12px 24px;
+    background: #0f7062;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+    width: 120px;
+}
+
+.form__button--enviar{
+    padding: 12px 24px;
+    background: #0f7062;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+    width: 120px;
+    align-self: end;
+}
+
+
+.unete-btn:hover {
+    background: #fff;
+    transform: scale(1.05);
+    color: #0f7062;
+}
+
+
+.main__title {
+    font-weight: 600;
+    font-size: 70px;
+    color: aliceblue;
+    font-family: "Poppins", serif;
 }
 
 h2 {
-    font-weight: 400;
     font-size: 40px;
+}
+
+.contenedor-home {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(236, 242, 247);
+    padding: 40px 50px;
+    border-radius: 20px;
 }
 
 p { 
     font-weight: 300;
     margin-top: 20px;
+    line-height: 1.5;
 }
 
-.fotos {
+.texto-contenedor{
+    display: flex;
+    flex-direction: row;
+}
+
+.texto-contenedor p{
+    width: 100%;
+    line-height: 1.5;
+}    
+
+.main__fotos {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -116,9 +202,8 @@ p {
     width: 100%; 
 }    
 
-.fotos img {
+.main__fotos img {
     width: 200px;
-    height: 150px;
     object-fit: cover;
     border-radius: 3px;
 }
@@ -164,26 +249,33 @@ footer li a:hover{
         font-size: 12px;
     }    
 
-    .fotos {
+    .main__fotos {
         width: 100%;
         gap: 20px;
     }
 
-    .fotos img{
+    .main__fotos img{
         height: 200px;
         width: 100%;
+    }
+
+    .texto-contenedor {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
 
 }
 
 
-
+/*----------------------------------------------------------*/
 /* NEWS */
 
 .contenedor-news{
     display: flex;
     flex-direction: column;
     gap: 40px;
+    padding: 40px 90px;
  }
 
 .noticias {
@@ -191,16 +283,17 @@ footer li a:hover{
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 40px;
-    padding: 40px 90px;
+    padding: 40px 60px;
     border: 2px solid transparent;
     border-radius: 3px;
     background-color: #ffffff3b;
     transition: background 0.3s ease, border-color 0.3s ease;
+    margin: 40px 30px;
+    gap: 20px;
 }
 
 .noticias:hover{
-    background: linear-gradient(to right, #f5f5ff49, #eaeaffb8); /* Gradiente suave en hover */
+    background: linear-gradient(to right, #f5f5ff49, #eaeaffb8); 
     border-color: #d1d1ff69;
 }
 
@@ -212,20 +305,26 @@ footer li a:hover{
     border-radius: 5px;
 }
 
-.texto-noticia {
+.noticias__texto {
     display: flex;
     flex-direction: column;
     flex: 1;
     gap: 10px;
 }
 
-.texto-noticia p{
-    font-weight: 400;
+.noticias__texto h2 {
+    font-size: 30px;
+}
+
+.noticias__texto p{
+    font-weight: 300;
     line-height: 1.5;
 }    
 
-#news {
+#news, #galeria {
     display: inline;
+    height: 100%;
+    width: 100%;
     background-image: 
         linear-gradient(rgba(229, 243, 253, 0.795) , rgba(198, 198, 223, 0.821)), 
         url(/img/hermoso-paisaje-cima-monte-everest-cubierto-nieve-nubes-blancas_181624-21317.jpg);
@@ -237,32 +336,51 @@ footer li a:hover{
 
 @media (max-width: 768px) {
     
+
+    .contenedor-news{
+        padding: 40px;
+        gap: 8px;
+    }
+
     .noticias{
         flex-wrap: wrap; 
         flex-direction: column;
         justify-content: center; 
         align-items: center;
-        gap: 8px;
         margin-bottom: 20px; 
         padding: 20px 40px;
-
+        margin: 10px 8px;
     }
 
     .noticias img{
-        width: 400px;
+        width: 100%;
         object-fit: cover;
         height: auto;
+        margin-top: 10px;
     }
 
+    .noticias__texto h2 {
+        font-size: 24px;
+    }
+
+}    
+
+/*----------------------------------------------------------*/
+/* GALERIA */
+
+#galeria main {
+    display: flex;
+    flex-direction: column;
+    padding: 80px;
 }
 
 
+#galeria h1 {
+    font-weight: 500;
+    font-size: 40px;
+    color: rgb(33, 16, 73);
+    font-family: "Poppins", serif;
 
-/* GALERIA */
-
-
-#galeria {
-    display: inline;
 }
 
 #galeria h2 {
@@ -270,14 +388,14 @@ footer li a:hover{
     margin-bottom: 70px;
 }
 
-.container-fotos {
+.galeria__contenedor-fotos {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     align-items: flex-start;
 }
 
-.container-fotos div {
+.galeria__contenedor-fotos div {
     flex: 1 1 calc(33.333% - 10px);
     margin: 5px;
     position: relative;
@@ -285,8 +403,59 @@ footer li a:hover{
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
-.container-fotos img {
+.galeria__contenedor-fotos img {
     width: 100%;
     height: auto;
     object-fit: cover;
+}
+
+
+@media (max-width: 768px) {
+
+    #galeria h1 {
+        font-size: 32px;
+    }
+}
+
+
+
+/*----------------------------------------------------------*/
+
+/* CONTACTO */
+
+
+
+.main--contacto{
+   display: flex;
+   flex-direction: column;
+   gap: 80px;
+   width: 80%;
+
+}
+
+.form--contacto{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.form--contacto ul{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.form--contacto ul li{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 18px;
+    justify-content: start;
+    padding: 0;
+}
+
+.form--contacto ul li input{
+    height: 60px;
+    border-radius: 10px;
 }
