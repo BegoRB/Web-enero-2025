@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(188, 210, 202);
+    height: 100%;
+    gap: 1.25rem;
+    padding: 40px;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(224, 231, 227);
+    height: 100%;
+    padding: 32px;
+}
+
+
+.header__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contenedor__frase {
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor__frase__articulo{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    width: fit-content;
+}
+
+.contenedor__frase__articulo--figure img {
+    background-color: rgb(145, 97, 190);
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+    position: relative;
+    top: -2.5rem;
+    background-color: rgba(249, 240, 255, 0.531);
+
+}
+
+.contenedor__frase__articulo {
+    width: fit-content;
+}
+
+.header__nav--link--icono {
+    height: 2.5rem;
+    width: fit-content;
+}

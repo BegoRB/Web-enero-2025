@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    print-color-adjust: exact;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.quinto {
+    width: 50vw;
+    height: 50vh;
+    background-color: aqua;
+}
+
+@media print {
+    .quinto {
+        background-color: green;
+
+    }
+}

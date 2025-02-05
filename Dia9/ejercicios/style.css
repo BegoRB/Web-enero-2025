@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    print-color-adjust: exact;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+div {
+    background-color: rgb(231, 224, 245);
+    border: 1px solid rgb(208, 156, 23);
+    width: 50vh;
+    height: 50vw;
+}
+
+@media (max-width: 480px){
+    div {
+        border: 2px solid red;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 780px) {
+    div {
+        border: 2px solid rgb(255, 255, 0);
+    }
+}
+
+@media (min-width: 781px) and (max-width: 1200px) {
+    div {
+        border: 2px solid rgb(0, 255, 0);
+    }
+}
+
+@media (min-width: 1201px){
+    div {
+        border: 2px solid rgb(0, 17, 255);
+    }
+}
+
+
+
+
+
+.segundo {
+    border-color: blue;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 0.2em;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.quinto {
+    width: 50vw;
+    height: 50vh;
+    background-color: aqua;
+}
+
+@media print {
+    .quinto {
+        background-color: green;
+    }
+}

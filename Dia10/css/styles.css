@@ -1,0 +1,656 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Inter", serif;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+
+header{
+    background-color: #BCBFE6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 2.5rem;
+    width: 100vw;
+}
+
+.header__logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header__logo img {
+    height: 2.5rem;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4.375rem;
+
+}
+
+ul li{
+    display: inline;
+    font-weight: 400;
+    font-size: .875em;
+    color: rgb(13, 13, 37);
+}
+
+li{
+    padding-left: 2.5rem;
+}
+
+li a {
+    text-decoration: none;
+    color: #1a1846;
+    transition: box-shadow 0.75, color 0.75; 
+    font-weight: 400;
+}
+
+
+li a:hover{
+    color: rgb(54, 24, 153);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.header__nav-link-active {
+    color: rgb(45, 21, 123);
+    font-weight: 600;
+}
+
+body {
+    display: inline;
+    background-image: 
+        linear-gradient(rgba(17, 17, 25, 0.5), rgba(17, 17, 25, 0.5)), 
+        url(img/hermoso-paisaje-cima-monte-everest-cubierto-nieve-nubes-blancas_181624-21317.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.main--index{
+    display: inline;
+    
+}    
+
+#bg-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(60%); 
+}
+
+
+
+.main--index {
+    padding: 5.625rem;
+    width: 100%;
+    min-height: calc(100vh - 7.5rem);
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.main__texto{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    color: aliceblue;
+    gap: 3.125rem;
+    margin-bottom: 12.5rem;
+
+}
+
+.unete-btn{
+    display: inline-block;
+    padding: .75rem 1.5rem;
+    background: #0f7062;
+    color: #fff;
+    font-size: 1.125em;
+    font-weight: bold;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    text-decoration: none;
+    width: 120px;
+}
+
+.unete-btn:hover {
+    background: #fff;
+    color: #0f7062;
+}
+
+
+.form__button--enviar{
+    display: inline-block;
+    padding: .75rem 1.5rem;
+    background: #0f7062;
+    color: #fff;
+    font-size: 1.125em;
+    font-weight: bold;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    text-decoration: none;
+    width: 120px;
+    align-self: end;
+}
+
+.form__button--enviar:hover {
+background: #fff;
+color: #0f7062;
+}
+
+
+
+.main__title {
+    font-weight: 600;
+    font-size: 4.37em;
+    color: aliceblue;
+    font-family: "Poppins", serif;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+.contenedor-home {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(236, 242, 247);
+    padding: 2.5rem 3.125rem;
+    border-radius: 1.25rem;
+}
+
+p { 
+    font-weight: 300;
+    margin-top: 1.25rem;
+    line-height: 1.5;
+}
+
+.texto-contenedor{
+    display: flex;
+    flex-direction: row;
+}
+
+.texto-contenedor p{
+    width: 100%;
+    line-height: 1.5;
+}    
+
+.main__fotos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .625rem;
+    justify-content: center;
+    width: 100%; 
+}    
+
+.main__fotos img {
+    width: 200px;
+    object-fit: cover;
+    border-radius: .1875rem;
+}
+
+
+footer {
+    background-color:  #1B1A2F;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    width: 100%;
+    height: 120px;
+    padding: 1.25rem;
+}
+
+.logo-footer img{
+    height: 30px;
+}
+
+.footer-enlaces li a{
+    color: whitesmoke;
+    font-weight: 200;
+
+}
+
+footer li a:hover{
+    cursor: pointer;
+    font-weight: 400;
+}
+
+
+@media (max-width: 465px) {
+
+    body {
+        width: 100vw;
+    }
+
+    .header__nav-list li{
+       padding: .375rem;
+
+    }
+
+    .header__nav-link {
+        font-size: .625em;
+    }
+
+    .header__logo img {
+        height: 24px;
+    }
+
+    .main--index{
+        width: 100%;
+        padding: 1.875rem;
+        gap: 2.5rem;
+    }
+
+    .main__texto {
+        gap: .625rem;
+        height: fit-content;
+        margin: 0;
+    }
+
+    .main--index h1 {
+        font-size: 1.5em;
+   }
+
+   .contenedor-home {
+        padding: 1.875rem 1.25rem;
+   }
+
+   .contenedor-home h2{
+        font-size: 1em;
+   }
+   
+   .contenedor-home p{
+        font-size: .75em;
+   }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+    }
+
+    footer a{
+        font-size: .625em;
+    }
+
+    .unete-btn {
+        display: inline-block;
+        font-size: .75em;
+        padding: .5rem 1.125rem;
+        width: fit-content;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .texto {
+        width: 100%;
+    }
+
+    ul li {
+        font-size: .75em;
+    }    
+
+    .main__fotos {
+        width: 100%;
+        gap: 1.25rem;
+    }
+
+    .main__fotos img{
+        height: 200px;
+        width: 100%;
+    }
+
+    .texto-contenedor {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+
+}
+
+
+/*----------------------------------------------------------*/
+/* NEWS */
+
+.contenedor-news{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    padding: 2.5rem 5.625rem;
+ }
+
+.noticias {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2.5rem 3.75rem;
+    border: .125rem solid transparent;
+    border-radius: .1875rem;
+    background-color: #ffffff3b;
+    transition: background 0.3s ease, border-color 0.3s ease;
+    margin: 2.5rem 1.875rem;
+    gap: 1.25rem;
+}
+
+.noticias:hover{
+    background: linear-gradient(to right, #f5f5ff49, #eaeaffb8); 
+    border-color: #d1d1ff69;
+}
+
+.noticias img {
+    margin-top: 5.625rem;
+    width: 300px; 
+    height: 200px; 
+    object-fit: cover;
+    border-radius: .3rem;
+}
+
+.noticias__texto {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: .625rem;
+}
+
+.noticias__texto h2 {
+    font-size: 1.875em;
+}
+
+.noticias__texto p{
+    font-weight: 300;
+    line-height: 1.5;
+}    
+
+#news, #galeria {
+    height: 100%;
+    width: 100%;
+    background-image: 
+        linear-gradient(rgba(229, 243, 253, 0.795) , rgba(198, 198, 223, 0.59)),
+        url(/img/everest.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+@media (max-width: 768px) {
+    
+
+    .contenedor-news{
+        padding: 1.25rem;
+        gap: .5rem;
+    }
+
+    .noticias{
+        flex-wrap: wrap; 
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        margin-bottom: 1.25rem; 
+        padding: .625rem 1.25rem;
+        margin: .625rem .5rem;
+    }
+
+    .noticias img{
+        width: 100%;
+        object-fit: cover;
+        height: auto;
+        margin-top: .625rem;
+    }
+
+    .noticias__texto h2 {
+        font-size: 1.5em;
+    }
+
+}    
+
+/*----------------------------------------------------------*/
+/* GALERIA */
+
+#galeria main {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+}
+
+
+#galeria h1 {
+    font-weight: 500;
+    font-size: 2.5em;
+    color: rgb(33, 16, 73);
+    font-family: "Poppins", serif;
+
+}
+
+#galeria h2 {
+    color: rgb(249, 249, 250);
+    margin-bottom: 4.375rem;
+}
+
+.galeria__contenedor-fotos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .625rem;
+    align-items: flex-start;
+}
+
+.galeria__contenedor-fotos div {
+    flex: 1 1 calc(33.333% - 10px);
+    margin: .3125rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 .0625rem .125rem rgba(0, 0, 0, 0.05);
+}
+
+.galeria__contenedor-fotos img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+@media (max-width: 768px) {
+
+    #galeria main{
+        padding: 1.875rem;
+        gap: 1.25rem;
+    }
+
+    #galeria h1{
+        font-size: 1.5em;
+    }
+
+    .galeria__imagen--video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 465px) {
+    
+
+    #galeria h1{
+        font-size: 1.25em;
+    }
+
+}
+
+
+/*----------------------------------------------------------*/
+
+/* CONTACTO */
+
+#contacto {
+    display: inline;
+    height: 100%;
+    width: 100%;
+    background-image: 
+        linear-gradient(rgba(229, 243, 253, 0.795) , rgba(198, 198, 223, 0.821)), 
+        url(/img/everest.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.main--contacto{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 5rem;
+   width: 100%;
+   height: 100%;
+   padding: 5.625rem;
+
+}
+
+.main--contacto-map {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main--contacto-map-frame {
+    height: 50%;
+    width: 80%;
+    padding-top: 1.25rem;
+}
+
+.main--contacto-form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.form--contacto{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.main--contacto h1, p{
+    color: #1a1846;
+}
+
+.form--contacto ul{
+    display: flex;
+    flex-direction: column;
+    gap: 3.125rem;
+}
+
+.form--contacto ul li{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    font-size: 1.125em;
+    justify-content: start;
+    padding: 0;
+}
+
+.form--contacto ul li input{
+    height: 60px;
+    border-radius: .625rem;
+}
+
+
+
+@media (max-width: 768px) {
+
+    #contacto {
+        height: 100vh;
+    }
+   
+    .main--contacto{
+        display: flex;
+        flex-direction: column;
+        padding: .625rem;
+        height: 100%;
+        gap: 1.25rem;
+    }
+
+
+    .main--contacto-form{
+        display: flex;
+        flex-direction: column;
+        padding: 1.875rem;
+        height: 100%;
+        gap: 1.25rem;
+        width: 100vw;
+    }
+
+    .main--contacto h1{
+       font-size: 1.25em;
+    }
+
+    .main--contacto ul li, p{
+        font-size: .875em;
+     }
+
+
+     .form__button--enviar{
+        font-size: .75em;
+        padding: .5rem 1.25rem;
+        width: fit-content;
+     }    
+
+     .form--contacto ul {
+        gap: 1.5rem;
+     }
+
+     .form--contacto ul li {
+        gap: .5rem;
+     }
+
+     .form--contacto ul li input {
+        height: fit-content;
+        padding: .75rem 1.25rem;
+     }
+
+
+     .main--contacto-map {
+        width: 100%;
+        height: 100%;
+        padding: 0rem 1.875rem;
+        justify-content: start;
+        align-items: center;
+     }
+
+
+}
+    
