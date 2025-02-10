@@ -1,0 +1,86 @@
+
+body {
+    width: 100vw;
+} 
+
+main { 
+    perspective: 100%;
+}
+
+div {
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+}
+
+.relative{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    background-color: rgb(248, 200, 167);
+}
+.absolute {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: blue;
+}
+
+.fixed{
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: beige;
+}
+
+
+/* EJERCICIO 1 */
+
+.ej1{
+    margin: auto;
+    position: relative;
+    left: 20px;
+    top: 10px;
+    background-color: brown;
+} 
+
+.ej2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: aquamarine;
+
+}
+
+.menu {
+    position: fixed;
+    background-color: darkgreen;
+    top: 0;
+    color: white;
+    width: 100vh;
+    z-index: -1;
+}
+
+.encabezado {
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+.ej5 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: rgb(253, 127, 255);
+
+}
+
+.ej6 {
+    transform: translate(50%, 50%);
+    transform: rotateY(280deg) rotateZ(28deg);
+    background-color: rgb(20, 220, 43);
+}
+
+img {
+    
+}

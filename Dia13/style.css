@@ -1,0 +1,170 @@
+
+.contenedor__parrafo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100%
+
+}
+
+.contenedor__parrafo p{
+    font-size: 1.5rem;
+    width: 50vw;
+}
+
+
+
+.parrafo--relative-p {
+    position: relative;
+    left: 25vw;
+    top: 50px;
+}
+
+.parrafo--relative-s {
+    position: relative;
+    right: 25vw;
+    bottom: 50px;
+}
+
+
+.contenedor-u {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: blue;
+    width: 50px;
+    height: 50px;
+    color: aliceblue;
+    font-size: 1.5rem;
+}
+
+.contenedor-d {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: blue;
+    width: 50px;
+    height: 50px;
+    color: aliceblue;
+    font-size: 1.5rem;
+}
+
+.contenedor-t {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: blue;
+    width: 50px;
+    height: 50px;
+    color: aliceblue;
+    font-size: 1.5rem;
+}
+
+.contenedor-q {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: blue;
+    width: 50px;
+    height: 50px;
+    color: aliceblue;
+    font-size: 1.5rem;
+}
+
+.contenedor-c {
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    background-color: blue;
+    width: 50px;
+    height: 50px;
+    color: aliceblue;
+    font-size: 1.5rem;
+}
+
+
+body::-webkit-scrollbar {
+    width: .75rem;
+}
+
+
+body::-webkit-scrollbar-track {
+    background: pink;
+}
+
+
+body::-webkit-scrollbar-thumb {
+    background-color: brown;
+    border-radius: 20px;
+}
+
+
+/* EJERCICIO 4 */
+
+.contenedor-uu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: blue;
+    width: 50px;
+    height: 50px;
+    color: aliceblue;
+    font-size: 1.5rem;
+}
+
+.contenedor-dd {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: blue;
+    width: 50px;
+    height: 50px;
+    color: aliceblue;
+    font-size: 1.5rem;
+}
+
+.contenedor-tt {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: blue;
+    width: 50px;
+    height: 50px;
+    color: aliceblue;
+    font-size: 1.5rem;
+}
+
+.contenedor-qq {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: blue;
+    width: 50px;
+    height: 50px;
+    color: aliceblue;
+    font-size: 1.5rem;
+}
+
+.contenedor-cc {
+    position: fixed;
+    bottom: 50%;
+    right: 50%;
+    background-color: blue;
+    width: 50px;
+    height: 50px;
+    color: aliceblue;
+    font-size: 1.5rem;
+}
+
+
+/* EJERCICIO 5 */
+
+h1 {
+    position: sticky;
+    top: 0px;
+}
+
+.segundo {
+    background-color: blueviolet;
+}
